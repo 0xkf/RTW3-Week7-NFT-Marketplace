@@ -14,7 +14,7 @@ module.exports = function override(config) {
    config.resolve.fallback = fallback; 
    config.plugins = (config.plugins || []).concat([ 
    	new webpack.ProvidePlugin({ 
-    	process: 'process/client', 
+    	process: 'process/browser', 
       Buffer: ['buffer', 'Buffer'] 
     }) 
    ]) 
